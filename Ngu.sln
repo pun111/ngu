@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ngu", "Ngu\Ngu.csproj", "{045607A4-5DAC-472E-95EB-83D2540378AD}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{81C00233-0143-4AAC-BA9A-3FC0EDE5E00A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{045607A4-5DAC-472E-95EB-83D2540378AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045607A4-5DAC-472E-95EB-83D2540378AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045607A4-5DAC-472E-95EB-83D2540378AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045607A4-5DAC-472E-95EB-83D2540378AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C00233-0143-4AAC-BA9A-3FC0EDE5E00A}.Debug|Any CPU.ActiveCfg = Debug
+		{81C00233-0143-4AAC-BA9A-3FC0EDE5E00A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D939840D-4222-4657-A41A-4617C6C5218D}
+	EndGlobalSection
+EndGlobal

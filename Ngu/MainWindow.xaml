@@ -1,0 +1,49 @@
+﻿<Window x:Class="Ngu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ngu"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="600" 
+        Width="400" 
+        
+        Loaded="Window_Loaded" 
+        Closing="Window_Closing">
+
+    <Window.DataContext>
+        <local:Model x:Name="Model"/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <!--<RowDefinition Height="10*"/>-->
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+
+        <!--<Label Grid.Row="0" Content="{Binding DesiredPixel, UpdateSourceTrigger=PropertyChanged}"/>-->
+        <UniformGrid Grid.Row="0" Columns="2">
+            <Button Content="StartSnipe" PreviewMouseLeftButtonDown="Start_PMLBD"/>            
+            <Button Content="StopSnipe" PreviewMouseLeftButtonDown="Stop_PMLBD"/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="1" Columns="2">
+            <Button Content="StartBoost" PreviewMouseLeftButtonDown="Boost_PMLBD"/>
+            <Button Content="BoostSetup complete" PreviewMouseLeftButtonDown="BoostSetupComplete_PMLBD"/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="2" Columns="2" Background="LightGray">
+            <Label Content="Long timer" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="Short timer" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </UniformGrid>
+        <UniformGrid Grid.Row="3" Columns="2">
+            <local:EnhancedTextBox Text="{Binding LongRoutineTimer, UpdateSourceTrigger=PropertyChanged}"/>
+            <local:EnhancedTextBox Text="{Binding ShortRoutineTimer, UpdateSourceTrigger=PropertyChanged}"/>
+        </UniformGrid>
+        <!--<Button Grid.Row="4" Content="SetDefault" PreviewMouseLeftButtonDown="SetDefault_PMLBD"/>-->
+        <ListBox Grid.Row="5" ItemsSource="{Binding AlertMessages, UpdateSourceTrigger=PropertyChanged}"/>
+    </Grid>
+</Window>
