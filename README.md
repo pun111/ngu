@@ -15,6 +15,11 @@ Currently supports 2 functions
  * Quicker boss sniping (quick-changing zones when boss not present)
  * Boosting inventory gear
  
+ Almost forgot tomention - setup your game window as you wish, click whichever items you want boosted. _BUT THEN DO
+ NOT MOVE THE WINDOW_ while script is running, it will break the item boost item/crown locations. You can always reset
+ by clicking stop or simply restarting the app.
+ 
+ 
  These two functions do not work together and are really basic, no health checking, no manual mode etc.
  I don't have specific plans to make this larger, although I may add features as I find them important to me. 
 The first and easiest step would be to chain the boost functions with merge and boost, possibly some loot filtering
